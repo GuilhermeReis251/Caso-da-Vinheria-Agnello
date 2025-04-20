@@ -15,7 +15,156 @@
     <a href="../Pages/pagina3.html">Avaliações</a>
     <h1>Nosso catalogo de vinhos</h1>
 
+    <div class="abas">
+        <input type="radio" id="tintos" name="tipo" checked>
+        <label for="tintos">Tintos</label>
     
+        <input type="radio" id="roses" name="tipo">
+        <label for="roses">Rosés</label>
+    
+        <input type="radio" id="brancos" name="tipo">
+        <label for="brancos">Brancos</label>
+    
+        <input type="radio" id="espumantes" name="tipo">
+        <label for="espumantes">Espumantes</label>
+    
+        <div class="conteudo" id="conteudo-tintos">
+            <p><strong>Cabernet Sauvignon</strong></p>
+            <p>Tinto - França - 2018</p>
+            <p>Um vinho encorpado, com muita personalidade e um sabor intenso.</p>
+            <p><strong>R$120,00</strong></p>
+            <img src="../assets/imgs/vinhotinto1.jpg" alt="Cabernet Sauvignon">
+            <button onclick="mostrarFormulario('Cabernet Sauvignon', 'R$120,00')">Saiba mais</button>
 
+            <p><strong>Merlot</strong></p>
+            <p>Tinto - Franla - 2015</p>
+            <p>Um vinho para um paladar mais suave, seu sabor frutado bem aparente.</p>
+            <p>R$190,00</p>
+            <img src="../assets/imgs/vinhotinto2.jpeg" alt="Merlot">
+            <button onclick="mostrarFormulario('Merlot', 'R$190,00')">Saiba mais</button>
+            
+            <p><strong>Pinot Noir</strong></p>
+            <p>Tinto - França - 2003</p>
+            <p>Um vinho mais leve, ao mesmo tempo perfeito para ocasiões elegantes.</p>
+            <p>R$150,00</p>
+            <img src="../assets/imgs/vinhotinto3.jpeg" alt="Pinot Noir">
+            <button onclick="mostrarFormulario('Pinot Noir', 'R$150,00')">Saiba mais</button>
+
+            <p><strong>Malbec</strong></p>
+            <p>Tinto - Argentina - 2013</p>
+            <p>Um vinho de origem sul-americana, forte e bem aveludado no paladar.</p>
+            <p>R$190,00</p>
+            <img src="../assets/imgs/vinhotinto4.jpg" alt="Malbec">
+            <button onclick="mostrarFormulario('Malbec', 'R$190,00')">Saiba mais</button>
+        </div>
+    
+        <div class="conteudo" id="conteudo-roses">
+            <p><strong>Rosé de Provence</strong></p>
+            <p>Rose - França - 2020</p>
+            <p>Um vinho leve, fresco e com um carater mediterrâneo</p>
+            <p>R$190,00</p>
+            <img src="../assets/imgs/vinhorose1.jpeg" alt="Rosé de Provence">
+            <button onclick="mostrarFormulario('Rosé de Provence', 'R$190,00')"></button>
+    
+            <p><strong>Tempranillo Rosé</strong></p>
+            <p>Rosé - Espanha - 2021</p>
+            <p>Refrescante e frutado, ideal para dias quentes e pratos leves.</p>
+            <p><strong>R$95,00</strong></p>
+            <img src="../assets/imgs/vinhorose2.jpeg" alt="Tempranillo Rosé">
+            <button onclick="mostrarFormulario('Tempranillo Rosé', 'R$95,00')"></button>
+    
+            <p><strong>Pinot Noir Rosé</strong></p>
+            <p>Rosé - França - 2022</p>
+            <p>Elegante, com notas de frutas vermelhas e final delicado.</p>
+            <p><strong>R$110,00</strong></p>
+            <img src="../assets/imgs/vinhorose3.jpeg" alt="Pinot Noir Rosé">
+            <button onclick="mostrarFormulario('Pinot Noir Rosé', 'R$110,00')"></button>
+        </div>
+    
+        <div class="conteudo" id="conteudo-brancos">
+            <p><strong>Chardonnay</strong></p>
+            <p>Branco - Chile - 2020</p>
+            <p>Vinho encorpado com notas amanteigadas e toque de baunilha.</p>
+            <p><strong>R$130,00</strong></p>
+            <img src="../assets/imgs/vinhobranco1.jpeg" alt="Chardonnay">
+            <button onclick="mostrarFormulario('Chardonnay', 'R$130,00')"></button>
+    
+            <p><strong>Sauvignon Blanc</strong></p>
+            <p>Branco - Nova Zelândia - 2021</p>
+            <p>Bem cítrico e herbal, ótimo para dias quentes.</p>
+            <p><strong>R$115,00</strong></p>
+            <img src="../assets/imgs/vinhobranco2.jpeg" alt="Sauvignon Blanc">
+            <button onclick="mostrarFormulario('Sauvignon Blanc', 'R$115,00')"></button>
+    
+            <p><strong>Riesling</strong></p>
+            <p>Branco - Alemanha - 2019</p>
+            <p>Aromático, com notas florais e equilíbrio entre doçura e acidez.</p>
+            <p><strong>R$125,00</strong></p>
+            <img src="../assets/imgs/vinhobranco3.jpeg" alt="Riesling">
+            <button onclick="mostrarFormulario('Riesling', 'R$125,00')"></button>
+    
+            <p><strong>Pinot Grigio</strong></p>
+            <p>Branco - Itália - 2022</p>
+            <p>Leve, fresco e muito versátil.</p>
+            <p><strong>R$105,00</strong></p>
+            <img src="../assets/imgs/vinhobranco4.jpeg" alt="Pinot Grigio">
+            <button onclick="mostrarFormulario('Pinot Grigio', 'R$105,00')"></button>
+        </div>
+    
+        <div class="conteudo" id="conteudo-espumantes">
+            <p><strong>Champagne</strong></p>
+            <p>Espumante - França - 2016</p>
+            <p>Elegância clássica, bolhas finas e sabor complexo. Só pode ser chamado assim se for de Champagne!</p>
+            <p><strong>R$350,00</strong></p>
+            <img src="../assets/imgs/vinhospu1.jpeg" alt="Champagne">
+            <button onclick="mostrarFormulario('Champagne', 'R$350,00')"></button>
+    
+            <p><strong>Prosecco</strong></p>
+            <p>Espumante - Itália - 2021</p>
+            <p>Mais leve e adocicado, ótimo para brindar com amigos.</p>
+            <p><strong>R$110,00</strong></p>
+            <img src="../assets/imgs/vinhospu2.jpeg" alt="Prosecco">
+            <button onclick="mostrarFormulario('Prosecco', 'R$110,00')"></button>
+    
+            <p><strong>Cava</strong></p>
+            <p>Espumante - Espanha - 2020</p>
+            <p>Mais seco, excelente para acompanhar entradas e frutos do mar.</p>
+            <p><strong>R$120,00</strong></p>
+            <img src="../assets/imgs/vinhospu3.jpeg" alt="Cava">
+            <button onclick="mostrarFormulario('Cava', 'R$120,00')"></button>
+    
+            <p><strong>Espumante Brut Brasileiro</strong></p>
+            <p>Espumante - Brasil - 2022</p>
+            <p>Frescor e qualidade premiada, orgulho nacional nas taças.</p>
+            <p><strong>R$80,00</strong></p>
+            <img src="../assets/imgs/vinhospu4.jpeg" alt="Espumante Brut Brasileiro">
+            <button onclick="mostrarFormulario('Espumante Brut Brasileiro', 'R$80,00')"></button>
+        </div>
+    </div>
+    <div id="formularioCompra" class="formulario-compra" style="display: none;">
+        <h2>Finalizar Compra</h2>
+        <p id="vinhoSelecionado"></p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" min="1" value="1" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="pagamento">Forma de Pagamento:</label>
+            <select id="pagamento" name="pagamento" required>
+                <option value="pix">PIX</option>
+                <option value="boleto">Boleto</option>
+                <option value="credito">Cartão de Crédito</option>
+            </select>
+
+            <button type="submit">Confirmar Compra</button>
+            <button type="button" onclick="fecharFormulario()">Cancelar</button>
+        </form>
+    </div>
+    <script src="../js/script.js"></script>
 </body>
 </html>

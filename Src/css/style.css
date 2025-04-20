@@ -10,3 +10,36 @@ body{
 .logogpt1{
     width: 100px;
 }
+
+
+.conteudo {
+    display: none;
+}
+
+#tintos:checked ~ #conteudo-tintos,
+#roses:checked ~ #conteudo-roses,
+#brancos:checked ~ #conteudo-brancos,
+#espumantes:checked ~ #conteudo-espumantes {
+    display: block;
+}
+.formulario-compra {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: white;
+    padding: 20px;
+    border: 2px solid #8B0000;
+    box-shadow: 0 0 10px #00000080;
+    z-index: 1000;
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+  .formulario-compra input,
+  .formulario-compra select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px;
+  }
