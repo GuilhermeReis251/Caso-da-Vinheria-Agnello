@@ -1,15 +1,4 @@
-:root {
-    --cor-fundo-claro: rgb(220, 216, 208);
-    --cor-fundo-escuro: rgb(219, 200, 164);
-    --cor-principal: #732020;
-    --cor-secundaria: #5a2a27;
-    --cor-destaque: #8B0000;
-    --cor-borda: #bda154;
-    --cor-texto: #333;
-    --cor-hover: #f1e4d5;
-    --font-padrao: Arial, sans-serif;
-    --font-titulo: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
     margin: 0;
@@ -19,7 +8,7 @@
 
 body {
     background: radial-gradient(circle, #f7d287, rgb(219, 200, 164));
-    font-family: var(--font-padrao);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .menu {
@@ -59,17 +48,19 @@ body {
     font-size: 40px;
     color: black;
     padding: 10px 35px;
+    font-family: "Playfair Display", serif;
+
 }
 
 .botao_menu1:hover, .botao_menu2:hover, .botao_menu3:hover, .botao_menu4:hover {
-    background-color: var(--cor-hover);
+    background-color: #f1e4d5;
 }
 
 .cabecalho_inicio {
     display: flex;
     justify-content: space-between;
     padding: 20px 40px;
-    background-color: var(--cor-fundo-escuro);
+    background-color:  rgb(219, 200, 164);
     width: 100%;
     height: 100px;
     box-sizing: border-box;
@@ -80,9 +71,9 @@ body {
     top: 20%;
     left: 50%;
     transform: translate(-50%, 0);
-    background-color: var(--cor-borda);
+    background-color: #f1e4d5;
     padding: 20px;
-    border: 2px solid var(--cor-destaque);
+    border: 2px solid #732020;
     box-shadow: 0 0 10px #00000080;
     z-index: 1000;
     width: 300px;
@@ -95,16 +86,11 @@ body {
     width: 100%;
     margin-bottom: 10px;
     padding: 6px;
-    border: 1px solid var(--cor-destaque);
+    border: 1px solid #732020;
     border-radius: 5px;
 }
 
-#tintos:checked ~ #conteudo-tintos,
-#roses:checked ~ #conteudo-roses,
-#brancos:checked ~ #conteudo-brancos,
-#espumantes:checked ~ #conteudo-espumantes {
-    display: block;
-}
+
 
 main {
     max-width: 1200px;
@@ -115,10 +101,11 @@ main {
 .titulo_sobre_nos {
     text-align: center;
     font-size: 36px;
-    color: var(--cor-principal);
+    color:  #732020;
     margin-bottom: 40px;
-    font-family: var(--font-titulo);
+    font-family: "Playfair Display", serif;
 }
+
 
 .sessao {
     display: flex;
@@ -127,6 +114,7 @@ main {
     gap: 40px;
     margin-bottom: 60px;
     flex-wrap: wrap;
+    font-family: "Libre Baskerville", serif;
 }
 
 .sessao.invertida {
@@ -139,7 +127,7 @@ main {
     width: 50%;
     font-size: 18px;
     line-height: 1.6;
-    color: var(--cor-texto);
+    color: #333;
 }
 
 .img_paragrafo1,
@@ -156,24 +144,28 @@ main {
     align-items: center;
     padding: 40px 20px;
     text-align: center;
+    font-family: "Libre Baskerville", serif;
+
 }
 
 .titulo_contato {
     font-size: 36px;
-    color: var(--cor-secundaria);
+    color: #732020;
     margin-bottom: 30px;
+    font-family: "Playfair Display", serif;
+
 }
 
 .info-contato p {
     font-size: 20px;
     margin: 10px 0;
-    color: var(--cor-texto);
+    color: #333;
 }
 
 .redes-sociais {
     margin-top: 40px;
     font-size: 28px;
-    color: var(--cor-secundaria);
+    color: #5a2a27;
 }
 
 .redes-container {
@@ -248,24 +240,28 @@ a {
     font-size: 36px;
     color: #000000;
     margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
 }
 
 .texto_catalogo_inicio2 {
     font-size: 20px;
     color: #000000;
     margin-bottom: 20px;
+    font-family: "Playfair Display", serif;
 }
 
 .botao_catalogo {
-    background-color: #8B0000;
+    background-color: #732020;
     color: black;
     padding: 12px 25px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 28px;
     text-align: center;
     display: inline-block;
     transition: background-color 0.3s ease;
     margin: 0 auto;
+    font-family: "Playfair Display", serif;
+
 }
 
 .botao_catalogo:hover {
@@ -278,7 +274,7 @@ a {
     width: 100%;
 }
 
-/* Estilo da seção de avaliações */
+
 .avaliacoes-container {
     max-width: 900px;
     margin: 60px auto;
@@ -286,12 +282,12 @@ a {
     padding: 40px;
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Playfair Display", serif;
 }
 
 .avaliacoes-container h1 {
     text-align: center;
-    color: #8b0000;
+    color: #732020;
     font-size: 36px;
     margin-bottom: 40px;
 }
@@ -302,12 +298,34 @@ a {
     border-radius: 12px;
     margin-bottom: 25px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    border-left: 5px solid #8b0000;
+    border-left: 5px solid #732020;
     transition: transform 0.2s;
+    font-family: "Libre Baskerville", serif;
+
+}
+.titulo_avaliacao2 {
+    font-family: "Libre Baskerville", serif;
+}
+.form_avaliacao{
+    font-family: "Libre Baskerville", serif;
 }
 
 .avaliacao:hover {
     transform: translateY(-3px);
+}
+.botao_avaliacao{
+    border: 2px;
+    margin: 20px 40px;
+    padding: 10px 20px;
+
+    border-radius: 500px;
+
+    background-color: #f1e4d5;
+    color: #000000;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .tipos_vinhos {
@@ -330,6 +348,8 @@ iframe {
     font-size: 28px;
     color: var(--cor-principal);
     margin: 15px 0;
+    font-family: "Playfair Display", serif;
+
 }
 
 
@@ -350,17 +370,17 @@ iframe {
 .produto img{
     width: 250px;
     height: auto;
-
+    
 }
 #tipos_vinhos{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    
+
 }
 .produto{
-    width: calc(50% - 20px); /* dois por linha, com espaço entre eles */
+    width: calc(50% - 20px); 
     background-color: #f3f3f3;
     padding: 10px;
     text-align: center;
@@ -375,4 +395,22 @@ iframe {
     width: 100%;
     padding: 30px 0;
     background-color: #bfb497;
+}
+.botao_vinho{
+    border: 2px;
+    margin: 20px 40px;
+    padding: 10px 20px;
+
+    border-radius: 500px;
+
+    background-color: #732020;
+    color: #000000;
+    font-weight: 800;
+}
+
+button:hover {
+    cursor: pointer;
+}
+.titulo_avaliacao{
+    font-family: "Playfair Display", serif;
 }
