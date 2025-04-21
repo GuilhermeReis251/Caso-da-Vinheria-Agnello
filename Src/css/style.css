@@ -414,3 +414,9 @@ button:hover {
 .titulo_avaliacao{
     font-family: "Playfair Display", serif;
 }
+footer {
+    background-color: #732020;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+}
