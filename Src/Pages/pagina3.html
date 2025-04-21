@@ -3,45 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Avaliações - Vinheria Agnello</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1 class="titulo">Vinheria Agnello</h1>
-    <img class="logogpt1" src="../assets/imgs/logogpt1.png" alt="Logo da Vinheria Agnello">
-    <a href="../../index.html">Início</a>
-    <a href="../Pages/pagina1.html">Sobre nós</a>
-    <a href="../Pages/pagina2.html">Contato</a>
+    <header class="cabecalho_inicio">
+        <nav class="menu">
+            <div class="menu-esquerda">
+                <a class="botao_menu1" href="../../index.html">Início</a>
+                <a class="botao_menu2" href="../Pages/pagina1.html">Sobre nós</a>
+            </div>
+            <div class="logo-container">
+                <img class="logo" src="../assets/imgs/logogpt1.png" alt="logo Agnello">
+            </div>
+            <div class="menu-direita">
+                <a class="botao_menu3" href="../Pages/pagina2.html">Contato</a>
+                <a class="botao_menu4" href="../Pages/pagina3.html">Avaliações</a>
+            </div>
+        </nav>
+    </header>
 
-    <h1>Avaliações de clientes</h1>
+    <main>
+        <div class="avaliacoes-container">
+            <h1>Avaliações de clientes</h1>
+            <div class="avaliacao">
+                <p><strong>Maria Aparecida</strong></p>
+                <p>Adorei toda a variedade de vinhos, com um atendimento muito rápido e bem educado, comprarei mais vezes!</p>
+                <p class="estrelas">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            </div>
+            <div class="avaliacao">
+                <p><strong>Ricardo Quaresma</strong></p>
+                <p>Sou um degustador de vinhos há muito tempo, e os vinhos realmente são de qualidade, parabéns para a loja!</p>
+                <p class="estrelas">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+            </div>
+            <div class="avaliacao">
+                <p><strong>Cristiano Ronaldo</strong></p>
+                <p>Estou bem impressionado com essa loja, sem dúvidas a melhor que frequentei nos meus tempos no Brasil. Retornarei mais vezes, um abraço!</p>
+                <p class="estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+            </div>
+            <h2>Nos ajude deixando a sua avaliação!</h2>
+            <form class="form-avaliacao">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" required>
 
-    <p><strong>Maria Aparecida</strong></p>
-    <p>Adorei toda a variedade de vinhos, com um atendimento muito rapido e bem educado, comprarei mais vezes!</p>
-    <p class="estrelas">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                <label for="estrelas">Nota (1 a 5 estrelas):</label>
+                <input type="number" id="estrelas" max="5" min="1" required>
 
-    <p><strong>Ricardo Quaresma</strong></p>
-    <p>Sou um degustador de vinhos a muito tempo ja, e os vinhos realmente são de qualidade, parabens para a loja! </p>
-    <p class="estrelas">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                <label for="comentario">Comentário</label>
+                <textarea name="comentario" id="comentario" rows="4" required></textarea>
 
-    <p><strong>Cristiano Ronanldo</strong></p>
-    <p>Estou bem inpressionado com essa loja, sem duvidas a melhor que frenquentei nos meus tempos no Brasil, retornarei mais vezes, um abraço!</p>
-    <p class="estrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-    
-    <h2>Nos ajude deixando a sua avaliação!</h2>
-    <form>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" required>
-
-        <label for="estrelas">Nota (1 a 5 estrelas):</label>
-        <input type="number" id="estrelas" max="5" min="1" required>
-
-        <label for="comentario">Comentario</label>
-        <textarea name="Comentario" id="comentario" rows="4" required></textarea>
-
-        <button>Enviar avaliação</button>
-
-
-
-    </form>
+                <button type="submit">Enviar avaliação</button>
+            </form>
+        </div>
+    </main>
 </body>
 </html>

@@ -1,19 +1,102 @@
-body{
-    background-color: #b8a283;
-    
+:root {
+    --cor-fundo-claro: rgb(220, 216, 208);
+    --cor-fundo-escuro: rgb(219, 200, 164);
+    --cor-principal: #732020;
+    --cor-secundaria: #5a2a27;
+    --cor-destaque: #8B0000;
+    --cor-borda: #bda154;
+    --cor-texto: #333;
+    --cor-hover: #f1e4d5;
+    --font-padrao: Arial, sans-serif;
+    --font-titulo: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.titulo{
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle, #f7d287, rgb(219, 200, 164));
+    font-family: var(--font-padrao);
+}
+
+.menu {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-esquerda, .menu-direita {
+    display: flex;
+    gap: 30px;
+}
+
+.menu-esquerda {
+    justify-content: flex-start;
+}
+
+.menu-direita {
+    justify-content: flex-end;
+}
+
+.logo-container {
+    flex: 1;
+    text-align: center;
+}
+
+.logo {
+    max-width: 105px;
+    height: auto;
+}
+
+.botao_menu1, .botao_menu2, .botao_menu3, .botao_menu4 {
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 40px;
     color: black;
-    
-}
-.logogpt1{
-    width: 100px;
+    padding: 10px 35px;
 }
 
+.botao_menu1:hover, .botao_menu2:hover, .botao_menu3:hover, .botao_menu4:hover {
+    background-color: var(--cor-hover);
+}
 
-.conteudo {
-    display: none;
+.cabecalho_inicio {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: var(--cor-fundo-escuro);
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.formulario-compra {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: var(--cor-borda);
+    padding: 20px;
+    border: 2px solid var(--cor-destaque);
+    box-shadow: 0 0 10px #00000080;
+    z-index: 1000;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.formulario-compra input,
+.formulario-compra select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 5px;
 }
 
 #tintos:checked ~ #conteudo-tintos,
@@ -22,24 +105,274 @@ body{
 #espumantes:checked ~ #conteudo-espumantes {
     display: block;
 }
-.formulario-compra {
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background-color: white;
-    padding: 20px;
-    border: 2px solid #8B0000;
-    box-shadow: 0 0 10px #00000080;
-    z-index: 1000;
-    width: 300px;
-    border-radius: 10px;
-  }
-  
-  .formulario-compra input,
-  .formulario-compra select {
-    display: block;
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.titulo_sobre_nos {
+    text-align: center;
+    font-size: 36px;
+    color: var(--cor-principal);
+    margin-bottom: 40px;
+    font-family: var(--font-titulo);
+}
+
+.sessao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+
+.sessao.invertida {
+    flex-direction: row-reverse;
+}
+
+.paragrafo1,
+.paragrafo2,
+.paragrafo3 {
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--cor-texto);
+}
+
+.img_paragrafo1,
+.img_paragrafo2,
+.img_paragrafo3 {
+    width: 45%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.contato-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.titulo_contato {
+    font-size: 36px;
+    color: var(--cor-secundaria);
+    margin-bottom: 30px;
+}
+
+.info-contato p {
+    font-size: 20px;
+    margin: 10px 0;
+    color: var(--cor-texto);
+}
+
+.redes-sociais {
+    margin-top: 40px;
+    font-size: 28px;
+    color: var(--cor-secundaria);
+}
+
+.redes-container {
+    margin-top: 10px;
+}
+
+.logo-instagram {
+    width: 60px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-instagram:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .menu-esquerda, .menu-direita {
+        gap: 15px;
+    }
+
+    .logo {
+        max-width: 80px;
+    }
+
+    .sessao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .paragrafo1, .paragrafo2, .paragrafo3 {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .img_paragrafo1, .img_paragrafo2, .img_paragrafo3 {
+        width: 90%;
+    }
+
+    .cabecalho_inicio {
+        padding: 15px 20px;
+        height: auto;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.cabecalho_inicio {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: rgb(219, 200, 164);
     width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.embaixo_cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.texto_catalogo_inicio1 {
+    font-size: 36px;
+    color: #000000;
     margin-bottom: 10px;
-    padding: 6px;
-  }
+}
+
+.texto_catalogo_inicio2 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.botao_catalogo {
+    background-color: #8B0000;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    margin: 0 auto;
+}
+
+.botao_catalogo:hover {
+    background-color: #a83232;
+}
+
+.container-botao-catalogo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Estilo da seção de avaliações */
+.avaliacoes-container {
+    max-width: 900px;
+    margin: 60px auto;
+    background-color: #fdf8f2;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.avaliacoes-container h1 {
+    text-align: center;
+    color: #8b0000;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.avaliacao {
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border-left: 5px solid #8b0000;
+    transition: transform 0.2s;
+}
+
+.avaliacao:hover {
+    transform: translateY(-3px);
+}
+
+.tipos_vinhos {
+    align-items: center;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+iframe {
+    display: block;
+    margin: 40px auto;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border: 3px solid var(--cor-borda);
+}
+
+.texto_video {
+    text-align: center;
+    font-size: 28px;
+    color: var(--cor-principal);
+    margin: 15px 0;
+}
+
+
+.titulo_catalogo_vinhos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #732020;
+}
+
+.produto p{
+    color: #5a2a27;
+}
+.produto img{
+    width: 250px;
+    height: auto;
+
+}
+#tipos_vinhos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+.produto{
+    width: calc(50% - 20px); /* dois por linha, com espaço entre eles */
+    background-color: #f3f3f3;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+#tipos_vinhos h2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #bfb497;
+}
