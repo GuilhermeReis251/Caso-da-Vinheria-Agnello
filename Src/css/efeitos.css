@@ -1,0 +1,14 @@
+.botao_menu1:focus, .botao_menu2:focus, .botao_menu3:focus, .botao_menu4:focus {
+    background-color: #732020;
+    color: #732020;
+  }
+.paragrafos_sobrenos::first-letter{
+    font-size: 50px;
+    display: block;
+    float: left;
+
+}
+.paragrafos_sobrenos::selection{
+    background-color: #732020;
+    color: aliceblue;
+}
