@@ -17,6 +17,7 @@ Este projeto é de um site institucional para a **Vinheria Agnello**, onde suas 
 - **css/style.css**: Arquivo de estilos para todo o site.
 - **assetc/imagens**: Pasta com todas as imagens utilizadas no projeto (como vinhos, logo, fundo etc).
 - **js/script.js**: Arquivo JavaScript responsável por interações como envio de avaliações, filtros de vinhos ou efeitos dinâmicos nas páginas.
+- **css/efeitos.css**: Arquivo CSS com os efeitos visuais aplicados. Pseudo-Classes, Pseudo-Elmentos, Animações, Transições e Transformações
 
 ## 👥 Integrantes do Grupo
 

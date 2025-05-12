@@ -459,6 +459,8 @@ footer {
     border-top: 1px solid #444;
     padding-top: 20px;
   }
+
+  /* efeitos.css*/
   .botao_menu1:focus, .botao_menu2:focus, .botao_menu3:focus, .botao_menu4:focus {
     background-color: #732020;
     color: #732020;
@@ -479,7 +481,7 @@ footer {
       transform: scale(1);
     }
     50% {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
   
@@ -487,7 +489,10 @@ footer {
     animation: pulse 2s ease-in-out infinite;
   }
   
-
+  button:hover {
+    cursor: pointer;
+    transform: scale(1.2) rotate(5deg);}
+    
   @import url('./efeitos.css');
 
   
