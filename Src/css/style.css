@@ -495,4 +495,21 @@ footer {
     
   @import url('./efeitos.css');
 
+  .footer_links a {
+    color: #ccc; /* Cor padrão dos links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer_links a:hover {
+    color: white; /* Cor ao passar o mouse */
+  }
+  
+  .footer_links a:active,
+  .footer_links a:focus,
+  .footer_links a:visited:focus {
+    color: white; /* Cor quando clicado (ativo/focado) */
+  }
+
+
   
